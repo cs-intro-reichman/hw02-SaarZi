@@ -6,13 +6,14 @@ public class DamkaBoard {
         // Put your code here
         int n = Integer.parseInt(args[0]);
         for (int i = 0; i < n; i++) {
+            String s = "";
             if (i % 2 == 1) {
-                System.out.print(" ");
+                s += " ";
             }
             for (int j = 0; j < n; j++) {
-                System.out.print("* ");
+                s += "* ";
             }
-            System.out.println();
+            System.out.println(s);
         }
     }
 }
